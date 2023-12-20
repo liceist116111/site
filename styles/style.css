@@ -2,10 +2,13 @@
     width: 100%;
     max-width: 1024px; 
     margin: 0 auto;
-    background-color: aqua;
+    background-color: pink;
   }
-  .logo {
-    float: left;
+  .logo img {
+    padding-top: 10px;
+    width: 40px;
+    height: 45px;
+    animation: myAnim 5s linear alternate infinite;
   }
   .info{
     float: right;
@@ -31,3 +34,11 @@
     margin: auto 200px;
     width: 624px;
   }
+  @keyframes myAnim {
+    from {
+      margin-left: 0;
+    }
+    to {
+      margin-left: 984px;
+    }
+   }
